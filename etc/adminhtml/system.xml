@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="space48" translate="label" sortOrder="500">
+            <label>Space48</label>
+        </tab>
+        <section id="sashes" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Promotional Sashes</label>
+            <tab>space48</tab>
+            <resource>Space48_PromotionalSashes::config_sashes</resource>
+            <group id="promosashes" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General Configuration</label>
+                <field id="is_enabled" translate="label" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Is Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="salesash" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Sale sash configuration</label>
+                <field id="sale_text" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Sale Sash Text</label>
+                </field>
+                <field id="sale_text_colour" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Sale Sash Text Colour</label>
+                    <comment>Colour values should use standard web colour notation e.g. #ffffff</comment>
+                </field>
+                <field id="sale_background_colour" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Sale Sash Background Colour</label>
+                    <comment>Colour values should use standard web colour notation e.g. #ffffff</comment>
+                </field>
+            </group>
+            <group id="newsash" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>New sash configuration</label>
+                <field id="new_text" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>New Sash Text</label>
+                </field>
+                <field id="new_text_colour" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>New Sash Text Colour</label>
+                    <comment>Colour values should use standard web colour notation e.g. #ffffff</comment>
+                </field>
+                <field id="new_background_colour" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>New Sash Background Colour</label>
+                    <comment>Colour values should use standard web colour notation e.g. #ffffff</comment>
+                </field>
+            </group>
+            <group id="personalisesash" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Personalise sash configuration</label>
+                <field id="personalise_text" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Personalise Sash Text</label>
+                </field>
+                <field id="personalise_text_colour" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Personalise Sash Text Colour</label>
+                    <comment>Colour values should use standard web colour notation e.g. #ffffff</comment>
+                </field>
+                <field id="personalise_background_colour" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Personalise Sash Background Colour</label>
+                    <comment>Colour values should use standard web colour notation e.g. #ffffff</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+

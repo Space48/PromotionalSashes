@@ -1,0 +1,26 @@
+<?php /** @var Space48\PromotionalSashes\Block\Sashes $block */ ?>
+<?php if ( $block->isPromotionalSasesEnabled() ): ?>
+    <?php if ( $productId = $block->getProductId() ) : ?>
+        <?php if ( $newSash = $block->getNewSash($productId) ): ?>
+            <div class="new-sash"
+                 style="color:<?= $newSash['text_colour'] ?>;background-color:<?= $newSash['background_colour'] ?>">
+                <?= $newSash['text'] ?>
+            </div>
+        <?php endif ?>
+
+        <?php if ( $saleSash = $block->getSaleSash($productId) ): ?>
+            <div class="sale-sash"
+                 style="color:<?= $saleSash['text_colour'] ?>;background-color:<?= $saleSash['background_colour'] ?>">
+                <?= $saleSash['text'] ?>
+            </div>
+        <?php endif ?>
+
+        <?php if ( $personaliseSash = $block->getPersonaliseSash($productId) ): ?>
+            <div class="personalise-sash"
+                 style="color:<?= $personaliseSash['text_colour'] ?>;background-color:<?= $personaliseSash['background_colour'] ?>">
+                <?= $personaliseSash['text'] ?>
+            </div>
+        <?php endif ?>
+    <?php endif ?>
+<?php endif ?>
+

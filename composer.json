@@ -1,0 +1,13 @@
+{
+    "name": "Space48/PromotionalSashes",
+    "description": "Generated promotional sashes for new, sale and personalise",
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Space48\\PromotionalSashes\\": ""
+        }
+    }
+}
