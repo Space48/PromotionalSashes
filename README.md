@@ -34,3 +34,11 @@ __Testing a commit before tagging__
 In the require section use `"Space48/PromotionalSashes": "dev-NAMEOFTHEBRANCHHERE"`, so for a branch
 named `bugfixes` you would need to do `"Space48/PromotionalSashes": "dev-bugfixes"`. If composer is complaining about version
 dependencies then use an alias like so `"Space48/PromotionalSashes": "dev-bugfixes as 0.0.2"`.
+
+__Adding the sash to the frontend__
+
+The sashes will not display automatically, you will need to add the following to your product list template, usually overidden in `app/design/frontend/PROJECT_NAME/default/Magento_Catalog/templates/product/list.phtml`.
+
+```php
+    <?php echo $block->getPromotionalSashes(PRODUCT_ID_HERE); ?>
+```
