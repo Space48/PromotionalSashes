@@ -20,9 +20,9 @@ In the project's composer.json file add the repo:
 ```
 
 Add `"Space48/PromotionalSashes": "0.0.1"` to the require section of the same composer.json file and run 
-`composer update` from the project root.
+`composer install` from the project root.
 
-Running bin/magento setup:upgrade should present you with a list of modules; you should be able to see 
+Running `bin/magento setup:upgrade` should present you with a list of modules; you should be able to see 
 `Space48_PromotionalSashes` in that list.
 
 Development
