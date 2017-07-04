@@ -19,7 +19,13 @@ Each configuration is expandable and relate to different attributes that are con
 Installation
 ---
 
-In the project's composer.json file add the repo:
+__In the project's composer.json file add the repo to the repositories configuration:__
+
+Use the command `composer config repositories.space48-promo-sashes vcs https://github.com/Space48/PromotionalSashes`
+
+_You may need to type `php composer.phar config repositories.space48-promo-sashes vcs https://github.com/Space48/PromotionalSashes` if you don't have composer installed globally_
+
+For manual installation add the configuration like so:
 
 ```javascript
 "repositories": [
@@ -36,8 +42,14 @@ In the project's composer.json file add the repo:
 ]
 ```
 
-Add `"Space48/PromotionalSashes": "0.0.1"` to the require section of the same composer.json file and run 
-`composer install` from the project root.
+__Require the module examples.__
+
+You can trigger an install with:
+
+`composer require Space48/PromotionalSashes:0.0.2`
+_Assuming the version you want is 0.0.2, this will trigger an install. It's best to be specific about which version you want._
+
+__Letting Magento know about the change__
 
 Running `bin/magento setup:upgrade` should present you with a list of modules; you should be able to see 
 `Space48_PromotionalSashes` in that list.
