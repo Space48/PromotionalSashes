@@ -1,8 +1,8 @@
 {
-    "name": "Space48/PromotionalSashes",
+    "name": "space48/promotional_sashes",
     "description": "Generated promotional sashes for new, sale and personalise",
     "type": "magento2-module",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "autoload": {
         "files": [
             "registration.php"
